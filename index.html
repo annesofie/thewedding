@@ -2,20 +2,84 @@
 <html lang="no">
 
 <head>
-  <meta name="google-site-verification" content="n9g2P8FFKjjnFn7zvEPHTWoX1mXkhgBRppKXWB5Ar7Y" />
   <meta charset="utf-8" />
   <meta name="revised" content="Tuesday, February 05, 2019, 12:45 pm" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+  <script src="./logic.js"></script>
+  <script src="./timeline/timeline.js"></script>
+  <link rel="stylesheet" href="./styling.css" />
+  <link rel="stylesheet" href="./timeline/timeline.css" />
 </head>
 
 <body>
   <noscript> You need to enable JavaScript to run this app. </noscript>
 
   <div id="root">
-    
+    <div class="top-div">
+        <div class="names">
+            <h2>Anne Sofie & Ruben</h2>
+        </div>
+        <div class="topbar" id='menubar'>
+            <div class='menu-item'><a href="#section1">Program</a></div>
+            <div class='menu-item'><a href="#section2">Overnatting</a></div>
+            <div class='menu-item'><a href="#section3">Gaver</a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="image-div">
+            <img src="assets/bergen.jpg" />
+        </div>
+        <div class='section' id="section1">
+            <h1>Program</h1>
+            <div class="timeline">
+                <div class="container left">
+                  <div class="content">
+                    <h2>Fredag 29.7</h2>
+                    <p>Ankomst vestlia hotell for alle gjestene. Felles middag kl 20.00. Det blir øl og vin i penthouse leiligheten fra kl. 19 for de som ønsker.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>Lørdag 30.7 - kirken</h2>
+                    <p>Oppmøte i Geilo kirke senest kl 14. Vielsen starter 14:30</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="content">
+                    <h2>Lørdag 30.7 - apertiff</h2>
+                    <p>Det blir servering av bobler utenfor Kai Fjell etter kirken. Om fint vær møtes vi på terassen utenfor Kai Fjell lokalet. </p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>Lørdag 30.7 - middag</h2>
+                    <p>Middagen blir servert i Kai Fjell lokalet</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="content">
+                    <h2>Lørdag 30.7 - fest</h2>
+                    <p>Festen blir holdt i GommoStugu. Ta på deg danskeskoene!</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>Lørdag 30.7 - nach</h2>
+                    <p>Klokken 02:00 beveger vi oss opp til penthouse leiligheten for nach. Det blir servert nattmat.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class='section' id="section2">
+            <h1>Overnatting</h1>
+            <a href="www.vestlia.no">Gå hit for å booke overnatting</a>
+            <p>Rabattkode: <b>annesofie&ruben</b></p>
+        </div>
+        <div class='section' id="section3"></div>
+    </div>
   </div>
 </body>
 
