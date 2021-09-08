@@ -6,6 +6,7 @@
 -------------------------------------------------- */
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ded7ce57;
 }
 /* Carousel base class */
 .carousel {
@@ -67,8 +68,21 @@ body {
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("./assets/dubrovnik2017.JPG");
+  background-image: url("./assets/forlovelse.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.container.section {
+  margin-top: 22px;
+}
+
+h1.program {
+  padding: 0px;
+}
+h4.program {
+  padding: 0px;
+  margin-bottom: 12px;
+  margin-top: 8px;
 }
