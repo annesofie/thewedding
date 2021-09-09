@@ -8,6 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ded7ce57;
 }
+
+.navbar {
+  background-color: #ded7ce57;
+  font-size: 20px;
+}
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -22,6 +27,8 @@ body {
 .carousel-item {
   height: 46rem;
 }
+
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */

@@ -1,184 +1,76 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <title>Anne Sofie og Ruben gifter seg!</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="revised" content="Tuesday, February 05, 2019, 12:45 pm" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <script src="./logic.js"></script>
-  <script src="./timeline/timeline.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styling.css" />
-  <link rel="stylesheet" href="./timeline/timeline.css" />
-</head>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .special-font {
+        font-family: "Arizonia", cursive;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-<body class="d-flex h-100 text-white bg-dark">
-  <noscript> You need to enable JavaScript to run this app. </noscript>
-
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
-      <div>
-        <h3 class="float-md-start mb-0">Anne Sofie & Ruben</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link active" aria-current="page" href="#bilder">Bilder</a>
-          <a class="nav-link" aria-current="page" href="#overnatting">Overnatting</a>
-          <a class="nav-link" href="#program">Program</a>
-          <a class="nav-link" href="#section3">Gaver</a>
-        </nav>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center black">
+            <h1 class="display-1 text-white special-font">
+              Anne Sofie og Ruben
+            </h1>
+            <h1 class="display-4 text-white special-font">Vi gifter oss!</h1>
+            <div class="input-group input-group-lg">
+              <span class="input-group-text special-font" id="inputGroup-sizing-lg">Passord:</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+        </div>
       </div>
     </header>
-    <main class="px-3">
-      <div class="container-fluid">
-        <div class="row align-items-center row-margin-top">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="bilder">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/nyttar2012.jpeg" class="d-block w-100" alt="illustrasjon">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Nyttårsfeiring i 2012</h5>
-                  <p>Ett år som kjærester.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/hybrida2013.png" class="d-block w-100" alt="illustrasjon">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Trondheim 2014</h5>
-                  <p>Fadderuken i Trondeim 2014</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/california2015.jpg" class="d-block w-100" alt="illustrasjon">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>California 2015</h5>
-                  <p>Anne Sofie på utveksling til Santa Barbara i 2015</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/vietnam2016.jpg" class="d-block w-100" alt="illustrasjon">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Vietnam 2016</h5>
-                  <p>Motorsykkeltur i Vietnam.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/dubrovnik2017.JPG" class="d-block w-100" alt="illustrasjon">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Dubrovnik 2017</h5>
-                  <p>Ferietur til Dubrovnik sommeren 2017.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Forrige</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Neste</span>
-            </button>
-          </div>
-        </div>
-        <div class="row align-items-center row-margin-top">
-          <div class='section' id="overnatting">
-            <h1>Overnatting</h1>
-            <div class="row-margin-top">
-              <p>Alle må booke overnatting selv</p>
-              <a href="www.vestlia.no">Gå hit for å booke overnatting</a>
-              <p>Rabattkode: <b>annesofie&ruben</b></p>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center row-margin-top">
-          <div class='section' id="program">
-            <h1>Program</h1>
-            <div class="row-margin-top">
-              <h3>Fredag 29.7</h3>
-              <ol class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Middag</div>
-                    Ankomst vestlia hotell for alle gjestene. Felles middag kl 20.00. Det blir øl og vin i penthouse leiligheten fra kl. 19 for de som ønsker.
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div class="row-margin-top">
-            <h3>Lørdag 30.7</h3>
-            <ol class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Formiddag</div>
-                  Oppmøte i Geilo kirke senest kl 14. Vielsen starter 14:30
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Aperitif og bryllupskake</div>
-                  Det blir servering av bobler utenfor "Kai Fjell" salen etter kirken. Om fint vær møtes vi på terassen utenfor Kai Fjell lokalet.
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Middag</div>
-                  Middagen blir i "Kai Fjell" salen klokken 19:00.
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Fest</div>
-                  Festen blir holdt i GommoStugu. Ta på deg danskeskoene!
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Nach</div>
-                  Ca. klokken 02:00 beveger vi oss opp til penthouse leiligheten for nach. Det blir servert nattmat.
-                </div>
-              </li>
-            </ol>
-            <div class="row-margin-top">
-              <h3>Søndag 31.7</h3>
-              <ol class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Frokost</div>
-                    Mulighet for å spise frokost i "Kai Fjell" salen sammen.
-                  </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Utsjekk og hjemreise</div>
-                    Utsjekk kl 12:00 og hjemreise, takk for en fantastisk helg!
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="row align-items-center row-margin-top">
-          <div class='section' id="gaver">
-            <h1>Gaver</h1>
-            <div class="row-margin-top">
-              <p>Vi setter pris på om gavene ikke pakkes inn slik at vi sparer all emballasjen</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
 
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end" style="color: black;"><a href="#">Back to top</a></p>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
