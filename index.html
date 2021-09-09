@@ -45,7 +45,6 @@
     <link href="carousel.css" rel="stylesheet" />
   </head>
   <body>
-    
     <header class="masthead">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -54,23 +53,42 @@
               Anne Sofie og Ruben
             </h1>
             <h1 class="display-4 text-white special-font">Vi gifter oss!</h1>
-            <div class="input-group input-group-lg">
-              <span class="input-group-text special-font" id="inputGroup-sizing-lg">Passord:</span>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-6">
+                <div class="input-group input-group-lg pt-3">
+                  <span
+                    class="input-group-text special-font"
+                    id="inputGroup-sizing-lg"
+                    >Passord:</span
+                  >
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg"
+                  />
+                  <button
+                    id="password-submit"
+                    type="submit"
+                    class="btn btn-dark"
+                  >
+                    Prøv meg!
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </header>
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end" style="color: black;"><a href="#">Back to top</a></p>
-      </footer>
-    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="crypto-js-4.1.1/crypto-js.js"></script>
+    <script type="text/javascript" src="/logic.js"></script>
   </body>
 </html>
