@@ -55,27 +55,29 @@
             <h1 class="display-4 text-white special-font">Vi gifter oss!</h1>
             <div class="row align-items-center justify-content-center">
               <div class="col-md-6">
-                <div class="input-group input-group-lg pt-3">
-                  <span
-                    class="input-group-text special-font"
-                    id="inputGroup-sizing-lg"
-                    >Passord:</span
-                  >
-                  <input
-                    id="password"
-                    type="password"
-                    class="form-control"
-                    aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-lg"
-                  />
-                  <button
-                    id="password-submit"
-                    type="submit"
-                    class="btn btn-dark"
-                  >
-                    Prøv meg!
-                  </button>
-                </div>
+                <form id="password-form">
+                  <div class="input-group input-group-lg pt-3">
+                    <span
+                      class="input-group-text special-font"
+                      id="inputGroup-sizing-lg"
+                      >Passord:</span
+                    >
+                    <input
+                      id="password"
+                      type="password"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
+                    />
+                    <button
+                      id="password-submit"
+                      type="submit"
+                      class="btn btn-dark"
+                    >
+                      Send inn
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -93,21 +95,19 @@
       "use strict";
 
       function returnStatus(req, status, address) {
-        //console.log(req);
         if (status == 200) {
           window.location = address;
         } else {
           var input = document.getElementById("password");
           input.value = "";
           input.classList.add("is-invalid");
-          input.setAttribute("placeholder", "Nope! Prøv igjen!");
+          input.setAttribute("placeholder", "Feil :( Prøv igjen!");
         }
       }
 
       function fetchStatus(address) {
         var client = new XMLHttpRequest();
         client.onreadystatechange = function () {
-          // in case of network errors this might not give reliable results
           if (this.readyState == 4) returnStatus(this, this.status, address);
         };
         client.open("HEAD", address);
@@ -120,8 +120,9 @@
         fetchStatus(url);
       }
 
-      const button = document.getElementById("password-submit");
-      button.addEventListener("click", (event) => {
+      const form = document.getElementById("password-form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
         loadPage(document.getElementById("password").value);
       });
     </script>
