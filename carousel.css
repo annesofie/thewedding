@@ -80,6 +80,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.masthead.password {
+  background-image: url("./assets/bading.png");
+}
 
 .container.section {
   margin-top: 22px;
