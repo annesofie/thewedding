@@ -123,7 +123,7 @@
       const form = document.getElementById("password-form");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        loadPage(document.getElementById("password").value);
+        loadPage(document.getElementById("password").value.toLowerCase());
       });
     </script>
   </body>
